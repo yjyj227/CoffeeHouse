@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+body {
+	font-family: 'NanumGothic';
+	align:center;
+	text-align:center;
+	background-color:rgb(56, 46, 43);
+	color:rgb(250, 240, 239);
+}
+hr {
+	border-color:rgb(250, 240, 239);
+}
+.logo {
+	display: block; margin: 0px auto;
+}
+.topbutton img {
+	width:35px;
+	height:35px;
+	position:fixed;
+	right:1%;
+	bottom:3%;
+	border-radius:25px;
+	z-index:100;
+}
+.cycle-slideshow {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+}
+.cycle-slideshow img {
+	width: 100%; 
+	display: inline-block;
+}
+.bestseller img {
+	width: 200px; height: 200px;
+}
+.mocha1 > div {
+	display:table;
+	vertical-align:middle;
+}
+.newproduct img {
+	width:100%; height:450px;
+}
+.mocha1, .prisel1 {
+	height:450px;
+	vertical-align:middle;
+	display:inline-block;
+}
+.capmac img {
+	width:100%; height:350px;
+}
+.etcness img {
+	width:100%; height:400px;
+}
+.etccap {
+	position: absolute;
+	left: 25px; top: 22px;
+	z-index: 3;
+	-webkit-background-clip:text;
+	color: white;
+	font-weight: bold;
+	font-size:2.7rem;
+}
+.footerarea1 {
+	clear: both;
+}
+.footerarea2 {
+	border-top:3px solid rgb(206, 151, 139);
+	text-align:center;
+}
+.footlogo img {
+	width:80%;
+}
+.footerinfo ul {
+	list-style-type:none;
+	margin-left:0; padding-left:0;
+}
+.footerinfo ul li {
+	display: inline-block;
+	font-size:1.45rem;
+	text-align:center;
+	color:rgb(250, 240, 239);
+	list-style-type:none;
+}
+a {
+	text-decoration:none;
+	color:rgb(250, 240, 239);
+}
+a:hover {
+	text-decoration:none;
+	color:rgb(56, 46, 43);
+}
+.snsicon img {
+	width:70%; height:70%;
+}
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+	display:block; margin:0;
+}
+
+
+/*
+
+----------여기까지 메인 페이지 스타일----------
+
+*/
+
+.pagetitle {
+	font-weight:bold;
+	font-size:2rem;
+}
+.form-control {
+	background-color:transparent;
+	color:rgb(250, 240, 239);
+}
+.form-control:focus {
+	background-color:transparent;
+	color:rgb(250, 240, 239);
+	border-color: rgb(250, 240, 239);
+	box-shadow: 0 0 0 0.25rem rgba(250, 240, 239, 0.25);
+}
+button {
+	font-weight:bold;
+	background-color:rgb(250, 240, 239);
+	color:rgb(56, 46, 43);
+}
+
+

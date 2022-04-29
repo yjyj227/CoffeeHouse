@@ -1,0 +1,373 @@
+@charset "UTF-8";
+/*
+pc상태에서 보여주는 스타일시트 화면(main.css)
+작성날짜:2022.01.08~
+작성자:김윤지
+*/
+
+* {
+	margin:0; padding:0;
+	background-color:white;
+	color:#6f5d58;
+	font-family:'Nanum Gothic', sans-serif;
+}
+
+/* 모바일용 안 보이게 */
+.hd2, .sc2, .sc3, .nv2mb, 
+.searchimg, .capback2mb, .free2mb, .nv5mb, .nv6mb 
+{display:none;}
+
+/* 메뉴 아래 구분선 */
+.topbg {
+	width: 100%; height: 120px;
+	border-bottom: 5px solid #f5ebe9;
+	z-index: 0;
+	position: absolute;
+	top: 0;
+}
+
+/* 전체 컨테이너 영역(전체 넓이, 양쪽 여백 설정) */
+.wrap {
+	width:1100px;
+	margin:0 auto;
+}
+ul, li {list-style-type:none;}
+a {text-decoration:none;}
+
+/* 로고 */
+h1 img {
+	float:left;
+	position:relative;
+	left:1%;
+	top:10px;
+	width:250px; height:100px;
+	border: 0px;
+	display:inline-block;
+	z-index:6;
+ }
+
+/* 1레벨 설정 */
+.nv1 {
+	width:72%; height:50px;
+	float:right;
+	position:relative;
+	right:1%; top:60px;
+	z-index:10;
+	font-size:25px;
+	padding-bottom:10px;
+	display:inline-block;
+}
+.nv1 > div > li {
+	float:left;
+	position:relative;
+	width:25%;
+	display:inline-block;
+}
+.nv1 ul li {position:relative;}
+.nv1 > div > li > a {
+	display:block;
+	line-height:60px;
+	text-align:center;
+	padding-left:5px; padding-right:5px;
+}
+.main1, .main2, .main3, .main4 {color: #ad8175;}
+.main1:hover {
+	font-weight: bold;
+	color:#805e53;
+}
+.main2:hover {
+	font-weight: bold;
+	color:#805e53;
+}
+.main3:hover {
+	font-weight: bold;
+	color:#805e53;
+}
+.main4:hover {
+	font-weight: bold;
+	color:#805e53;
+}
+
+/* 2레벨 메뉴 설정 */
+.sub1 a, .sub2 a {
+	color: #ad8175;
+	background-color: white;
+	display:block;
+}
+.sub1, .sub2 {
+	font-size: 20px;
+	color: #ad8175;
+}
+.nv1 ul {
+	position:absolute;
+	top:-9999px;
+	z-index:9;
+	left:0%;
+	width:180px;
+	border:1px solid #ad8175;
+}
+.nv1 div li:hover > .sub1 {
+	border:1px solid #ad8175;
+	position:absolute;
+	top:60px;
+	left:0%;
+	padding:0px;
+	width:195px;
+	text-align:center;
+	line-height:40px;
+}
+.nv1 div li:hover > .sub2 {
+	border:1px solid #ad8175;
+	position:absolute;
+	top:60px;
+	left:0%;
+	padding:0px;
+	width:196px;
+	text-align:center;
+	line-height:40px;
+}
+.sub1 > li:hover > ul {
+	border:1px solid #ad8175;
+	position:absolute;
+	left:100%;
+	top:-1px;
+	z-index:20;
+	width:220px;
+	padding:0px;
+}
+.sub2 > li:hover > ul {
+	border:1px solid #ad8175;
+	position:absolute;
+	left:100%;
+	top:-1px;
+	z-index:20;
+	width:220px;
+	padding:0px;
+}
+
+/* 3레벨 메뉴 설정 */
+.subc {
+	border:1px solid #ad8175;
+	position:absolute;
+	left:100%;
+	top:-9999px;
+	color: #ad8175;
+}
+.subm {
+	border:1px solid #ad8175;
+	position:absolute;
+	left:100%;
+	top:-9999px;
+	display:inline-block;
+	color: #ad8175;
+}
+.suba {
+	border:1px solid #ad8175;
+	position:absolute;
+	left:100%;
+	top:-9999px;
+	display:inline-block;
+	color: #ad8175;
+}
+
+/* 메뉴 호버시 색 바뀌게 */
+.p1:hover, .p2:hover, .p3:hover, .p4:hover,
+.subc1:hover, .subc2:hover, .subc3:hover, .subc4:hover,
+.subm1:hover, .subm2:hover, .subm3:hover, .subm4:hover,
+.suba1:hover, .suba2:hover, .suba3:hover, .suba4:hover,
+.suba5:hover, .suba6:hover, .suba7:hover,
+.sub2_1:hover, .sub2_2:hover, .sub2_3:hover, 
+.sub2_4:hover, .sub2_5:hover{
+	font-weight: bold;
+	color:#805e53;
+	display:block;
+	line-height:40px;
+}
+
+/* 검색창 */
+.search {
+	position: relative;
+	top: -52px;
+	float: left;
+	left: 30%;
+	border: 0.5px solid #ad8175;
+	text-align: center;
+	width: 150px;
+	color: #ad8175;
+	height: 20px;
+}
+
+/* 로그인, 마이페이지, 사이트맵, 언어 */
+.nv2 {
+	position: relative;
+	z-index:999;
+	top:-52px;
+	float:right;
+	width:30%; height:20px;
+	right:1%;
+	text-align: center;
+	color: #805e53;
+}
+.nv2 ul {
+	position:absolute;
+	top:-9999px;
+	z-index:9;
+	left:0%;
+	width:180px;
+	border:1px solid #ad8175;
+	color: #805e53;
+}
+.lang  {
+	border:1px solid #ad8175;
+	width: 80px;
+	position: relative;
+	top:-9999px;
+	right: -1.5px;
+	line-height:20px;
+	font-size: 13px;
+	color: #ad8175;
+}
+.myp {
+	border:1px solid #ad8175;
+	width: 120px;
+	position: relative;
+	top:-9999px;
+	right:20px;
+	line-height:20px;
+	font-size: 13px;
+	color: #ad8175;
+}
+.lang a, .myp a {color: #ad8175;}
+.nv2 div li:hover > .myp {
+	border:1px solid #ad8175;
+	width: 120px;
+	position: absolute;
+	top:0.5px;
+	right:20px;
+	line-height:20px;
+}
+.nv2 div li:hover > a {
+	color: #805e53;
+	font-weight: bold;
+}
+.topmenu > div {
+	position:relative;
+	width:25%;
+	float:left;
+	display:inline-block;
+	padding: 0;
+	font-size: 15px;
+}
+.topmenu div:hover > ul {
+	border:1px solid #ad8175;
+	width: 80px;
+	position: relative;
+	top:0.5px;
+	right: -0.5px;
+	line-height:25px;
+}
+.topmenu > div > li > a {
+	display:block;
+	line-height:20px;
+	text-align:center;
+	padding-left:5px; padding-right:5px;
+}
+.topmenu ul {
+	position:absolute;
+	top:-9999px;
+	z-index:9;
+	left:0%;
+	width:180px;
+	border:1px solid black;
+}
+.top1, .top2, .top3, .top4 {color: #ad8175;}
+.top1:hover, .top2:hover, .top3:hover, .top4:hover {
+	color:#805e53;
+	font-weight: bold;
+}
+ /*
+table {
+	position:absolute;
+	text-align:center;
+	vertical-align:center;
+}
+
+#agreement {
+	position:absolute;
+	text-align:center;
+	vertical-align:center;
+}
+*/
+
+/* footer */
+.ft1 {
+	clear: both;
+	position: relative;
+	height: 250px;
+	margin: 0 auto;
+	top: 600px;
+	z-index: 1;
+}
+.nv3 img {
+	width: 125px; height: 50px;
+	top: 8px; left: 5px;
+	position: relative;
+}
+.nv4 {
+	position:relative;
+	top:-48px;
+	width: 665px;
+	float: left;
+	left: 13%;
+	text-align: center;
+}
+.nv4 ul li {
+	float:left;
+	margin-left:1.5%;
+	display: inline-block;
+	font-size: 15px;
+}
+.nv5 {
+	position:relative;
+	top:40px;
+	float:left;
+	margin-left:4%;
+	font-size:15px;
+	width: 665px; height: 147px;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 20px;
+	left: 9%; top: -37px;
+	line-height: 26px;
+}
+.nv6 {
+	text-align: center;
+	width: 270px; height: 50px;
+	position: relative;
+	float: right;
+	right: 0.5%; top: -70px;
+}
+.nv6 img {width: 150px;}
+.nv7 {
+	text-align: center;
+	width: 260px;
+	position: relative;
+	float: right;
+	right: 0.5%; top: -60px;
+	padding: 5px;
+	vertical-align: middle;
+	line-height: 24px;
+}
+#btncall {
+	padding: 3px;
+	border: 2px solid #6f5d58;
+}
+
+/* footer 구분선 */
+.bottombg {
+	width: 100%; height: 200px;
+	z-index: 0;
+	position: relative;
+	bottom: -310px;
+	border-top: 5px solid #f5ebe9;
+}

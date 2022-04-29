@@ -1,0 +1,598 @@
+/*
+모바일 상태에서 보여주는 스타일시트 화면(mainmo.css)
+작성날짜:2022.01.08~
+작성자:김윤지
+*/
+#pcver,.search,.nv2,.nv3 {display: none;}
+* {
+	color:#6f5d58;
+}
+.wrap {
+	width: 700px;  margin: 0 auto;
+}
+body, ul {
+	margin:0; /* 바깥쪽 여백 */
+	padding:0; /* 안쪽 여백 */
+}
+ul, li {list-style-type:none;}
+a {text-decoration:none;}
+
+/* 메뉴 아래 구분선 */
+.topbg {
+	width: 100%; height: 120px;
+	border-bottom: 5px solid #f5ebe9;
+	z-index: 0;
+	position: absolute;
+	top: 53.5px;
+}
+
+/* 로고 */
+h1 {text-align: center}
+h1 img {
+	position:relative;
+	top:15px;
+	width:210px; height:84px;
+	display:inline-block;
+	z-index:6;
+	border: 0px;
+ }
+
+ /* 1레벨 설정 */
+ 
+.nv1 > div > li {
+ 	float: left;
+ 	position: relative;
+ 	width: 25%;
+ 	display: block;
+ }
+.main1,.main2,.main3,.main4 {
+	color: #ad8175;
+	
+}
+.nv1 > div > li > a {
+ 	display: block;
+ 	text-align: center;
+ 	height: 35px;
+ 	line-height: 35px;
+
+ }
+
+.nv1 ul li {position:relative;}
+.main1:hover {
+	font-weight: bold;
+	color:#805e53;
+}
+.main2:hover {
+	font-weight: bold;
+	color:#805e53;
+}
+.main3:hover {
+	font-weight: bold;
+	color:#805e53;
+}
+.main4:hover {
+	font-weight: bold;
+	color:#805e53;
+}
+
+/* 2레벨 메뉴 설정 */
+.sub1 a, .sub2 a {
+	color: #ad8175;
+	background-color: white;
+	display:block;
+}
+.sub1, .sub2 {
+	
+	color: #ad8175;
+}
+.nv1 ul {
+	position:absolute;
+	top:-9999px;
+	z-index:9;
+	left:0%;
+	width:25%;
+	border:1px solid #ad8175;
+}
+.nv1 div li:hover > .sub1 {
+	border:1px solid #ad8175;
+	position:absolute;
+	top:36px;
+	left:0%;
+	padding:0px;
+	width:100%;
+	text-align:center;
+	line-height:40px;
+}
+.nv1 div li:hover > .sub2 {
+	border:1px solid #ad8175;
+	position:absolute;
+	top:36px;
+	left:0%;
+	padding:0px;
+	width:100%;
+	text-align:center;
+	line-height:40px;
+}
+.sub1 > li:hover > ul {
+	border:1px solid #ad8175;
+	position:absolute;
+	left:100%;
+	top:-1px;
+	z-index:20;
+	width:100%;
+	padding:0px;
+}
+.sub2 > li:hover > ul {
+	border:1px solid #ad8175;
+	position:absolute;
+	left:100%;
+	top:-1px;
+	z-index:20;
+	width:100%;
+	padding:0px;
+}
+
+/* 3레벨 메뉴 설정 */
+.subc {
+	border:1px solid #ad8175;
+	position:absolute;
+	left:100%;
+	top:-9999px;
+	color: #ad8175;
+}
+.subm {
+	border:1px solid #ad8175;
+	position:absolute;
+	left:100%;
+	top:-9999px;
+	display:inline-block;
+	color: #ad8175;
+}
+.suba {
+	border:1px solid #ad8175;
+	position:absolute;
+	left:100%;
+	top:-9999px;
+	display:inline-block;
+	color: #ad8175;
+}
+
+/* 메뉴 호버시 색 바뀌게 */
+.p1:hover, .p2:hover, .p3:hover, .p4:hover,
+.subc1:hover, .subc2:hover, .subc3:hover, .subc4:hover,
+.subm1:hover, .subm2:hover, .subm3:hover, .subm4:hover,
+.suba1:hover, .suba2:hover, .suba3:hover, .suba4:hover,
+.suba5:hover, .suba6:hover, .suba7:hover,
+.sub2_1:hover, .sub2_2:hover, .sub2_3:hover, 
+.sub2_4:hover, .sub2_5:hover{
+	font-weight: bold;
+	color:#805e53;
+	display:block;
+	line-height:40px;
+}
+
+/* 검색창 */
+.searchimg {
+	position: relative;
+	top: -168px;
+	float: left;
+	left: 1%;
+	text-align: center;
+	width: 30px; height: 30px;
+	color: #ad8175;
+}
+
+/* 로그인, 마이페이지, 사이트맵, 언어 */
+.nv2mb {
+	position: relative;
+	z-index:999;
+	top:-167px;
+	float:right;
+	width: 25%; height:20px;
+	right:0%;
+	text-align: center;
+	color: #805e53;
+	display: inline-block;
+}
+.nv2mb ul {
+	position:absolute;
+	top:-9999px;
+	z-index:9;
+	left:0%;
+	width:180px;
+	border:1px solid #ad8175;
+	color: #805e53;
+	text-align: center;
+}
+.nv2mb a {
+	color: #ad8175;
+}
+.myp {
+	border:1px solid #ad8175;
+	width: 120px;
+	position: relative;
+	top:-9999px;
+	right:20px;
+	line-height:15px;
+	font-size: 11px;
+	color: #ad8175;
+}
+.myp a {color: #ad8175;}
+.nv2mb div li:hover > .myp {
+	border:1px solid #ad8175;
+	width: 120px;
+	position: absolute;
+	top:0.5px;
+	right:20px;
+	line-height:15px;
+}
+.nv2mb div li:hover > a {
+	color: #805e53;
+	font-weight: bold;
+}
+.topmenu > div {
+	position:relative;
+	width:50%;
+	float:left;
+	display:inline-block;
+	padding: 0;
+	font-size: 13px;
+}
+.topmenu div:hover > ul {
+	border:1px solid #ad8175;
+	width: 80px;
+	position: relative;
+	top:0.5px;
+	right: -0.5px;
+	line-height:20px;
+}
+.topmenu > div > li > a {
+	display:block;
+	line-height:20px;
+	text-align:center;
+	padding-left:5px; padding-right:5px;
+}
+.topmenu ul {
+	position:absolute;
+	top:-9999px;
+	z-index:9;
+	left:0%;
+	width:180px;
+	border:1px solid black;
+}
+
+/* 슬라이드 이미지 설정 */
+.cycle-slideshow {
+	position: relative;
+	top: 55px;
+	z-index: 1;
+	text-align: center;
+	margin: auto;
+}
+.cycle-slideshow img {
+	width: 100%; height: 250px;
+	display: block;
+}
+
+/* 베스트셀러 */
+.at1 {
+	width: 90%; height: 300px;
+	border-bottom: 2px solid #f5ebe9;
+	text-align: center;
+	margin: auto;
+	position: relative;
+	top: 50px;
+}
+.besth2 {
+	top: -15px;
+	position: relative;
+}
+.line {
+	border: 0.5px solid lightgray;
+	width: 0px;
+	height: 250px;
+	position: relative;
+	top: -30px;
+	display: inline-block;
+	float: left; left: -8%;
+}
+.d1 > figure > img {
+	
+	width: 200px; height: 200px;
+	display: inline-block;
+	position: relative;
+	z-index: 3;
+	float: left; top: -20px; left: 3%;
+}
+.fc1 {
+	float:left;
+	position: relative;
+	left: -27%; top: 190px;
+}
+.d2 > figure > img {
+	
+	width: 100px; height: 100px;
+	display: inline-block;
+	position: relative;
+	z-index: 3;
+	float: left; top: -27px; left: -4%;
+}
+.fc2 {
+	float:left;
+	position: relative;
+	left: -8%; top: -25px;
+	font-size: 12px;
+}
+.d3 > figure > img {
+	width: 100px; height: 100px;
+	display: inline-block;
+	position: relative;
+	z-index: 3;
+	float: left; top: -145px; left: 23%;
+}
+.fc3 {
+	float:left;
+	position: relative;
+	left: 20%; top: -143px;
+	font-size: 12px;
+}
+.d4 > figure > img {
+	width: 100px; height: 100px;
+	display: inline-block;
+	position: relative;
+	z-index: 3;
+	float: left; top: -140px; left: -4%;
+}
+.fc4 {
+	float:left;
+	position: relative;
+	left: -21%; top:-36px;
+	font-size: 12px;
+}
+.d5 > figure > img {
+	width: 100px; height: 100px;
+	display: inline-block;
+	position: relative;
+	z-index: 3;
+	float: left; top: -156px; left: 4.5%;
+}
+.fc5 {
+	float:left;
+	position: relative;
+	left: 79%; top:-154px;
+	font-size: 12px;
+	z-index: 4;
+}
+
+/* 신제품 */
+.at2 {
+	border-bottom: 2px solid #f5ebe9;
+	width: 100%; height: 560px;
+	position: relative;
+	display: inline-block;
+	top: -30px;
+	text-align: center;
+}
+.newh2 {
+	margin: auto;
+	text-align: center;
+	top: 10px;
+	position: relative;
+}
+.dv1 > img {
+	width: 300px;
+	top: 30px; left: 4%;
+	position: relative;
+	float: left;
+}
+.dv1e {
+	position: relative;
+	float: left;
+	left: -26.5%; top: 472px;
+}
+.dv2 img {
+	width: 300px;
+	top: -32.5px; right: 4%;
+	position: relative;
+	float: right;
+}
+.dv2e {
+	position: relative;
+	float: right;
+	right: -37%; top: 20px;
+}
+
+/* 홍보영상*/
+.at3 {
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	position: relative;
+	top: 30px;
+}
+
+/* 캡슐 수거, 무료 체험 */
+.at4 {
+	width: 80%; height: 459px;
+	text-align: center;
+	margin: auto;
+	position: relative;
+	top: 100px;
+}
+.capback1 > img {
+	width: 60%;
+	position: relative;
+	float: left;
+}
+.capback2mb {
+	border: 1px solid #f5ebe9;
+	padding: 2px;
+	position: relative;
+	float: right;
+	text-align: right;
+	font-size: 15px;
+	z-index: 10;
+	right: 4%; top: 50px;
+	padding: 3px;
+}
+.free1 > img {
+	width: 60%;
+	position: relative;
+	float: right;
+	top: -17.5px;
+}
+.free2mb {
+	border: 1px solid #f5ebe9;
+	padding: 2px;
+	position: relative;
+	float: left;
+	text-align: left;
+	font-size: 15px;
+	z-index: 10;
+	left: -58%; top: 150px;
+	padding: 3px;
+}
+
+/* 뉴스, 환경보호, 매장찾기, 정기구독 */
+.at5 {
+	width: 100%; height: 525px;
+	text-align: center;
+	position: relative;
+	top: 150px;
+	float: left;
+	display: inline-block;
+}
+.at5 p {font-size: 25px;}
+.news > img {
+	width: 30%; height: 250px;
+	position: relative;
+	float: left;
+	display: inline-block;
+	left: 18%;
+	top: 0px;
+	z-index: 0;
+}
+.news > p {
+	position: absolute;
+	float: left;
+	left: 145px; top: -10px;
+	z-index: 5;
+	-webkit-background-clip:text;
+	color: white;
+	font-weight: bold;
+	text-align: left;
+}
+.eco > img {
+	width: 30%; height: 250px;
+	position: relative;
+	float: right;
+	display: inline-block;
+	right: 18%;
+	top: 0px;
+	z-index: 0;
+}
+.eco > p {
+	position: absolute;
+	float: right;
+	right: 145px; top: -10px;
+	z-index: 5;
+	-webkit-background-clip:text;
+	color: white;
+	font-weight: bold;
+	text-align: right;
+}
+.shop > img {
+	width: 30%; height: 250px;
+	position: relative;
+	float: left;
+	display: inline-block;
+	left: -12%;
+	top: 275px;
+	z-index: 0;
+}
+.shop > p {
+	position: absolute;
+	float: left;
+	left: 145px; top: 450px;
+	z-index: 5;
+	-webkit-background-clip:text;
+	color: white;
+	font-weight: bold;
+	text-align: left;
+}
+.subsc > img {
+	width: 30%; height: 250px;
+	position: relative;
+	float: right;
+	display: inline-block;
+	right: 18%;
+	top: 25px;
+	z-index: 0;
+}
+.subsc > p {
+	position: absolute;
+	float: right;
+	right: 145px; top: 450px;
+	z-index: 5;
+	-webkit-background-clip:text;
+	color: white;
+	font-weight: bold;
+	text-align: right;
+}
+ /* footer */
+.ft1 {
+	clear: both;
+	position: relative;
+	height: 400px;
+	margin: 0 auto;
+	top: 300px;
+}
+.nv4 {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	top: 20px;
+}
+.nv4 ul li {
+	float:left;
+	margin-left:1.5%;
+	display: block;
+	font-size: 15px;
+	
+}
+.nv5mb {
+	position:relative;
+	top:40px;
+	float:left;
+	font-size:13px;
+	width: 57%; height: 220px;
+	text-align: left;
+	vertical-align: middle;
+	padding-top: 10px; padding-left:10px;
+	left: 3%; top: 70px;
+	line-height: 26px;
+}
+.nv7 {
+	text-align: right;
+	width: 30%; height: 220px;
+	position: relative;
+	float: right;
+	right: 3%; top: 72px;
+	padding-top: 10px; padding-right:10px;
+}
+.nv6mb {
+	text-align: center;
+	position: relative;
+	top: 90px;
+}
+.nv6mb img {
+	width: 200px;
+
+}
+.bottombg {
+	width: 100%; height: 200px;
+	z-index: 0;
+	position: relative;
+	bottom: 110px;
+	border-top: 5px solid #f5ebe9;
+}
