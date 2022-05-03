@@ -10,7 +10,7 @@
 &nbsp;&nbsp;&nbsp;화면구현 2(Bootstrap 적용) : 2022.02.16 - 2022.02.21<br>
 &nbsp;&nbsp;&nbsp;JSP MVC 모델 1 : 2022.02.03 - 2022.02.23<br>
 &nbsp;&nbsp;&nbsp;JSP MVC 모델 2 : 2022.02.23 - 2022.02.27<br>
-}
+}<br>
 개발 환경 : {<br>
 &nbsp;&nbsp;&nbsp;개발 언어 : HTML5, CSS3, JavaScript, Java8, JSP<br>
 &nbsp;&nbsp;&nbsp;라이브러리 : Bootstrap 3, 5<br>
