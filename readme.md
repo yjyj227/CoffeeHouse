@@ -19,7 +19,6 @@
 &nbsp;&nbsp;&nbsp;DB : Oracle 11g<br>
 &nbsp;&nbsp;&nbsp;운영체제 : Windows 10<br>
 &nbsp;&nbsp;&nbsp;기타 도구 : SQL Plus, DBeaver, eXERD, EditPlus, Procreate<br>
-&nbsp;&nbsp;&nbsp;구현 기능 : 회원가입, 로그인, 회원정보 조회 및 수정, 글 작성·수정·삭제, 댓글 조회<br>
-}
-<br>
+}<br>
+구현 기능 : 회원가입, 로그인, 회원정보 조회 및 수정, 글 작성·수정·삭제, 댓글 조회<br>
 <br>
